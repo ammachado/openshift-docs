@@ -29,7 +29,7 @@ $ helm upgrade -i  my-plugin charts/openshift-console-plugin -n my-plugin-namesp
 Where:
 +
 --
-`n <my-plugin-namespace>`:: Specifies an existing namespace to deploy your plugin into.
+`-n <my-plugin-namespace>`:: Specifies an existing namespace to deploy your plugin into.
 `--create-namespace`:: Optional: If deploying to a new namespace, use this parameter.
 `--set plugin.image=my-plugin-image-location`:: Specifies the location of the image within the `plugin.image` parameter.
 --

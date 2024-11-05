@@ -26,7 +26,10 @@ spec:
   proxy:
   - alias: helm-charts <1>
     authorization: UserToken <2>
-    caCertificate: +'-----BEGIN CERTIFICATE-----\nMIID....'en+ <3>
+    caCertificate: <3>
+      -----BEGIN CERTIFICATE-----
+      Custom CA certificate bundle.
+      -----END CERTIFICATE-----
     endpoint: <4>
       service:
         name: <service-name>
